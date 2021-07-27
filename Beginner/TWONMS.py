@@ -1,5 +1,5 @@
 # https://www.codechef.com/problems/TWONMS
 
 for T in range(int(input())):
-    a,b,n=map(int,input().split())
-    print(max(a*(2**(n+1)),b*(2**n))//min(a*(2**(n+1)),b*(2**n))) if(n%2!=0) else print(max(a*(2**n),b*(2**n))//min(a*(2**n),b*(2**n)))
+    a,b,n=input().split()
+    print(max(int(a)*2,int(b))//min(int(a)*2,int(b))) if(int(n[-1])%2!=0) else print(max(int(a),int(b))//min(int(a),int(b)))
