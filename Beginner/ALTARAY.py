@@ -1,9 +1,9 @@
 # https://www.codechef.com/problems/ALTARAY
 
 for T in range(int(input())):
-    n,l,c,s=int(input()),list(map(int,input().split())),1,""
-    for i in range(n-1,0,-1):
-        if(l[i]^l[i-1]<0): s,c=s+str(c)+" ",c+1
-        else: s,c=s+str(c)+" ",1
-    s+=str(c)
-    print(s[::-1])
+    n,l=int(input()),list(map(int,input().split()))
+    ans=[1]*n
+    for i in range(n-2,-1,-1):
+        if(l[i]^l[i+1]<0): ans[i]=ans[i+1]+1
+        else: ans[i]=1
+    print(*ans)
