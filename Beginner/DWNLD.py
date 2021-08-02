@@ -2,13 +2,9 @@
 
 for TC in range(int(input())):
     n,k=map(int,input().split())
-    T=s=i=0
-    while(True):
+    T,s=[],0
+    for i in range(n):
         t,d=map(int,input().split())
-        if(T+t>k):break
-        T,i=T+t,i+1
-    s+=((T+t-k)*d)
-    for j in range(i+1,n):
-        t,d=map(int,input().split())
-        s+=(t*d)
+        T.append(t)
+        if(sum(T)>k): s,k=s+((sum(T)-k)*d),sum(T)
     print(s)
