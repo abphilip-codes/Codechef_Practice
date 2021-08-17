@@ -5,4 +5,4 @@ for T in range(int(input())):
     for i in range(0,n-1,2):
         print(chr(219-ord(s[i+1])),end="")
         print(chr(219-ord(s[i])),end="")
-    print(chr(219-ord(s[n-1]))) if(n%2!=0) else print("")
+    print(chr(219-ord(s[n-1])),end="") if(n%2!=0) else print("",end="")
