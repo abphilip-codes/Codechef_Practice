@@ -6,3 +6,4 @@ for T in range(int(input())):
         print(chr(219-ord(s[i+1])),end="")
         print(chr(219-ord(s[i])),end="")
     print(chr(219-ord(s[n-1])),end="") if(n%2!=0) else print("",end="")
+    print()
