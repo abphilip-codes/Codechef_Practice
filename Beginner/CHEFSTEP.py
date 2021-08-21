@@ -5,3 +5,4 @@ for T in range(int(input())):
     l=list(map(int,input().split()))
     for z in l:
         print("1",end="") if(z%k==0) else print("0",end="")
+    print()
