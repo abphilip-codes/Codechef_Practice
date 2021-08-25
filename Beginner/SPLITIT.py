@@ -2,8 +2,5 @@
 
 for T in range(int(input())):
     n,s=int(input()),input()
-    for z in range(n//2,n):
-        if(s[z:] in s[:z]): 
-            print("YES")
-            break
+    if(s[n-1] in s[:n-1]): print("YES")
     else: print("NO")
