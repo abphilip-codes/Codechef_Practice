@@ -2,7 +2,7 @@
 
 for _ in range(int(input())):
     a,b=map(int,input().split())
-    a1,a2,b1,b2,m=a%10,a//10,b%10,b//10,0
-    if(a2): m=max(m,a2*10+b2+a1*10+b1)
-    if(b2): m=max(m,b1*10+a1+b2*10+a2)
-    print(m)
+    ans=a+b
+    if(a>=10): ans=max(ans,a//10+a%10+(b%10+b//10)*10)
+    if(b>=10): ans=max(ans,b//10+b%10+(a%10+a//10)*10)
+    print(ans)
