@@ -1,13 +1,11 @@
 # https://www.codechef.com/problems/SNELECT
 
 for _ in range(int(input())):
-    st,a,z = "k"+input()+"k",[],1
+    st,a = "k"+input()+"k",[]
     a = [f for f in st]
-    while(a[z]!='k'): 
-        if(a[z-1]=='s'): 
-            a.pop(z-1)
-            z-=1
-        elif(a[z+1]=='s'): 
-            a.pop(z+1)
-        z+=1 
-    print(a)
+    for z in range(1,len(a)-1):
+        if(a[z]=='m' and a[z-1]=='s'): a[z-1]="*"
+        elif(a[z]=='m' and a[z+1]=='s'): a[z+1]="*"
+    if(a.count('m')>a.count('s')): print("mongooses")
+    elif(a.count('m')<a.count('s')): print("snakes")
+    else: print("tie")
