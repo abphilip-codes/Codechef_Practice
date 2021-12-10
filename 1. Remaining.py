@@ -1,4 +1,3 @@
-# https://www.codechef.com/problems/PRGIFT
 # https://www.codechef.com/problems/QUADROOT
 # https://www.codechef.com/problems/TEMPLELA
 # https://www.codechef.com/problems/BUGCAL

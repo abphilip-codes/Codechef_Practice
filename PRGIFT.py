@@ -2,14 +2,8 @@
 
 for T in range(int(input())):
     n,k=map(int,input().split())
-    a,c=list(map(int,input().split())),0
-    if(k in range(1,n+1)):
-        for i in a:
-            if(i%2==0): c+=1
-            else: c=0
-            if(c==k): 
-                print("YES")
-                break
-        else: 
-            print("YES") if(c==k) else print("NO")
-    else: print("NO")
+    a,c=list(map(int,input().split())),False
+    for z in range(n):
+        for y in range(z,n):
+            if(k==len([1 for x in range(z,y+1) if(a[x]%2==0)])): c=True
+    print("YES") if(c) else print("NO")
