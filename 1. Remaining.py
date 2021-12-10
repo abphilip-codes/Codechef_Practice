@@ -1,6 +1,5 @@
 # https://www.codechef.com/problems/QUADROOT
 # https://www.codechef.com/problems/TEMPLELA
-# https://www.codechef.com/problems/BUGCAL
 # https://www.codechef.com/problems/PALIN
 # https://www.codechef.com/problems/WDTBAM
 # https://www.codechef.com/problems/CHEFNWRK
