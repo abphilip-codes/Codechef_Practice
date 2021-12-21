@@ -1,7 +1,4 @@
-# 
-# https://www.codechef.com/problems/PALIN
 # https://www.codechef.com/problems/WDTBAM
-# https://www.codechef.com/problems/CHEFNWRK
 # https://www.codechef.com/problems/CHFGCD
 # https://www.codechef.com/problems/CHFPLN
 # https://www.codechef.com/problems/MODEQUAL
